@@ -68,7 +68,11 @@ curl -i -X POST http://localhost:8080/ -d '{
 }'
 ```
 
-The above commands return some canned JSON responses with dummy rates.
+The above commands return some canned JSON responses with dummy rates:
+
+- zip `10021` returns [this message](ups/stub2-payload.json)
+- zip `11215` returns [this message](ups/stub1-payload.json)
+
 If the provided zip code does not match `10021` or `11215`, the following default message is returned:
 
 ```json
@@ -108,7 +112,11 @@ curl -i -X POST http://localhost:9090/ -d '<?xml version="1.0" encoding="UTF-8" 
 </ship>'
 ```
 
-The above commands return some canned XML responses with dummy rates.
+The above commands return some canned XML responses with dummy rates:
+
+- zip `10021` returns [this message](fedex/stub2-payload.xml)
+- zip `11215` returns [this message](fedex/stub1-payload.xml)
+
 If the provided zip code does not match `10021` or `11215`, the following default message is returned:
 
 ```xml
