@@ -71,7 +71,7 @@ curl -i -X POST http://localhost:8080/ -d '{
 The above commands return some canned JSON responses with dummy rates.
 If the provided zip code does not match `10021` or `11215`, the following default message is returned:
 
-```
+```json
 {
   "shipping": [
     {
@@ -111,7 +111,7 @@ curl -i -X POST http://localhost:9090/ -d '<?xml version="1.0" encoding="UTF-8" 
 The above commands return some canned XML responses with dummy rates.
 If the provided zip code does not match `10021` or `11215`, the following default message is returned:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <ship>
     <rates/>
